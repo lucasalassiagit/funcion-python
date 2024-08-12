@@ -16,21 +16,21 @@ def dividir(num1, num2):
             
 num1 = int(input("Ingrese primer numero a operar: "))
 num2 = int(input("Ingrese segundo numero a operar: "))
-num = int(input("Ingrese 1 para sumar, 2 resta, 3 multiplicacion 0 4 division: "))
+num = int(input("Ingrese 1 para multiplicacion, 2 divison, 3 suma 0 4 resta: "))
 
 if num == 1:
-    resultado = sumar(num1,num2)
-    print(f"El resultado de la suma es: {resultado}")
-    
-elif num == 2:
-    resultado = restar(num1,num2)
-    print(f"El resultado de la resta es: {resultado}")
-
-elif num == 3:
     resultado = multiplicar(num1,num2)
     print(f"El resultado de la multiplicacion es: {resultado}")
+    
+elif num == 2:
+    resultado = dividir(num1,num2)
+    print(f"El resultado de la division es: {resultado}")
+
+elif num == 3:
+    resultado = sumar(num1,num2)
+    print(f"El resultado de la suma es: {resultado}")
 
 elif num == 4:
-    resultado = multiplicar(num1,num2)
-    print(f"El resultado de la division es: {resultado}")
+    resultado = restar(num1,num2)
+    print(f"El resultado de la resta es: {resultado}")
 
