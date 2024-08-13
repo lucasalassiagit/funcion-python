@@ -34,3 +34,5 @@ elif num == 4:
     resultado = restar(num1,num2)
     print(f"El resultado de la resta es: {resultado}")
 
+else:
+    print("Debe ingresar un numero entre 1 y 4")
